@@ -1,0 +1,21 @@
+{%  extends 'crmapp/base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="jumbotron">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{form}}
+            
+            <div class="row">
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-success btn-block btn-lg"><i class="fas fa-database"></i>
+                        Submit</button>
+                </div>
+                
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock %}
